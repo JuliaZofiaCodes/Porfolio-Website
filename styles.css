@@ -1,0 +1,54 @@
+html {
+  background: FFFFFF;
+  font-family: Poppins;
+}
+nav {
+  display: inline-flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+}
+h2 {
+  font-style: normal;
+  font-weight: 275;
+  font-size: 58px;
+  line-height: 87px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 69px;
+  color: #000000;
+}
+h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 50px;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.project_grid {
+  display: flex;
+}
+.project_imgs {
+  max-width: 100%;
+}
+.project_imgs:hover {
+  
+}
