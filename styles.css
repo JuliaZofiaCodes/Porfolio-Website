@@ -16,6 +16,14 @@ nav {
   font-size: 15px;
   letter-spacing: 0.15px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  min-height: 100px;
+  padding: 30px 50px;
+}
 section {
   padding: 30px 50px;
 }
@@ -73,4 +81,7 @@ a:hover {
 }
 .project_decription {
   display: flex;
+}
+.prototype {
+  margin: 0 auto;
 }
