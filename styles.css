@@ -83,7 +83,6 @@ a:hover {
   margin-bottom: 40px;
 }
 .project_decription {
-  display: flex;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -102,4 +101,5 @@ iframe {
 }
 .middlepic {
   margin: 0 auto;
+  display: block;
 }
