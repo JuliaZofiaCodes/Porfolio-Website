@@ -1,6 +1,7 @@
 html {
   background: FFFFFF;
   font-family: Poppins;
+  color: #000000;
 }
 nav {
   display: flex;
@@ -35,20 +36,54 @@ section {
   padding-bottom: 9px;
   padding: 20px;
 }
+h1 {
+  font-style: normal;
+  font-weight: 275;
+  font-size: 93px;
+  line-height: 140px;
+  letter-spacing: 1.5px;
+}
 h2 {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 275;
   font-size: 58px;
   line-height: 87px;
   letter-spacing: 0.5px;
-  color: #000000;
 }
 h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 46px;
   line-height: 69px;
-  color: #000000;
+}
+h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 50px;
+  letter-spacing: 0.25px;
+}
+h5 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 34px;
+}
+h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+}
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
 }
 .p1 {
   font-style: normal;
@@ -81,10 +116,6 @@ a:hover {
 .project_imgs {
   max-width: 100%;
   margin-bottom: 40px;
-}
-.project_decription {
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
 iframe {
   display: block;
