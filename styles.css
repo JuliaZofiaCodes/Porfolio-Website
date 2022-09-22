@@ -106,6 +106,9 @@ a:hover {
 .project_imgs {
   max-width: 100%;
 }
+.project_decription {
+  max-width: 720px;
+}
 iframe {
   display: block;
   margin-left: auto;
