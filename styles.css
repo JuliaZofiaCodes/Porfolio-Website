@@ -80,10 +80,10 @@ main {
 .project_imgs {
   max-width: 100%;
 }
+/* project page */
 .project_decription {
   max-width: 720px;
 }
-/* project page */
 .process {
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +95,9 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.project_cover {
+  max-width: 720px;
 }
 /* typography */
 h1 {
