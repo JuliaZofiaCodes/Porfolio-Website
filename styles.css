@@ -98,8 +98,15 @@ iframe {
 }
 .project_cover {
   max-width: 720px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 h1 {
   font-style: normal;
   font-weight: 275;
