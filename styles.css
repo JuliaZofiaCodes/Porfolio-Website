@@ -63,7 +63,13 @@ a:hover {
 }
 /* main content */
 main {
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px 50px;
+}
+/* hero section */
+.hero {
+  padding: 150px 50px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -71,8 +77,8 @@ main {
 /* projects page */
 .project_grid {
   display: grid;
-  padding: 30px 50px;
-  grid-template: repeat(1, 1fr)/ repeat(3, 1fr);
+  
+  grid-template: repeat(1, 1fr) / repeat(3, 1fr);
 }
 .whole_project {
   padding: 16px;
@@ -109,14 +115,37 @@ iframe {
   margin-right: auto;
 }
 /* typography */
-h1, h2, h3, h4, h5, h6 {
+heading {
+  font-style: normal;
+  font-weight: 275;
+  font-size: 56px;
+  line-height: 90px;
+  letter-spacing: 1.5px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.subheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  padding-top: 25px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 h1 {
   font-style: normal;
   font-weight: 275;
-  font-size: 56px;
+  font-size: 42px;
   line-height: 90px;
   letter-spacing: 1.5px;
 }
@@ -166,7 +195,7 @@ p {
 @media only screen and (max-width: 480px) {
   p {
     font-size: 16px;
-  }  
+  }
   h2 {
     font-size: 20px;
     padding: 10px;
