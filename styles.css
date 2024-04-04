@@ -82,7 +82,7 @@ main {
 }
 /* project page */
 .project_decription {
-  max-width: 720px;
+  max-width: 800px;
 }
 .process {
   display: flex;
@@ -98,6 +98,12 @@ iframe {
 }
 .project_cover {
   max-width: 720px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project_page_image {
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
