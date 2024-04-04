@@ -79,11 +79,6 @@ main {
   margin-right: auto;
 }
 /* projects page */
-.title {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .project_grid {
   display: grid;
 
