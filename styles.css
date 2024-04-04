@@ -66,18 +66,27 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 30px 50px;
+  max-width: 800px;
+}
+.index {
+  max-width: fit-content;
 }
 /* hero section */
 .hero {
-  padding: 150px 50px;
+  padding: 100px 50px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 /* projects page */
+.title {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .project_grid {
   display: grid;
-  
+
   grid-template: repeat(1, 1fr) / repeat(3, 1fr);
 }
 .whole_project {
