@@ -111,6 +111,8 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .project_page_image {
   max-width: 100%;
