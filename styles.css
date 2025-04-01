@@ -9,13 +9,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  padding: 5%;
+  padding: 2%;
+  flex-wrap: nowrap;
 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   letter-spacing: 0.15px;
+}
+.links a {
+
+  width: 40px;
+  height: 40px;
 }
 /* footer */
 footer {
@@ -32,13 +38,11 @@ footer {
   align-items: center;
   flex: 1;
 }
-
 .hamburger {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
-
 a {
   text-decoration: none;
 }
@@ -124,7 +128,7 @@ iframe {
 heading {
   font-style: normal;
   font-weight: 275;
-  font-size: 56px;
+  font-size: 50px;
   line-height: 90px;
   letter-spacing: 1.5px;
   margin-top: 0px;
@@ -231,20 +235,29 @@ p {
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    right: 20px; /* Ustawienie hamburgera po prawej */
+    right: 20px;
     top: 20px;
+    z-index: 101;
+  }
+
+  #logo {
+    display: inline-block;
+    left: 20px; /* Logo po lewej */
+    top: 20px;
+    z-index: 99;
   }
 
   .links {
     display: none;
     flex-direction: column;
-    top: 60px;
-    right: 0; /* Menu rozwijane po prawej stronie */
+    top: 80px; /* Pod hamburgerem */
+    right: 20px; /* Wyrównanie do hamburgera */
     background: white;
     width: 100%;
-    text-align: right; /* Linki wyrównane do prawej */
+    text-align: right;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    gap: 10px; /* Odstęp między linkami */
+    gap: 10px;
+    z-index: 100; /* Zapewnia, że menu pojawia się nad innymi elementami */
   }
 
   .links a {
@@ -256,12 +269,6 @@ p {
 
   .links.show {
     display: flex;
-  }
-
-  #logo {
-    left: 0; /* Logo po lewej */
-    top: 0;
-    position: sticky;
   }
 }
 
