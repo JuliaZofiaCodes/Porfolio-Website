@@ -18,11 +18,12 @@ nav {
   font-size: 18px;
   letter-spacing: 0.15px;
 }
-.links a {
-
-  width: 40px;
-  height: 40px;
+.links {
+  display: flex;
+  gap: 30px; /* Dostosuj odstęp między linkami */
 }
+
+
 /* footer */
 footer {
   display: flex;
@@ -237,27 +238,29 @@ p {
     position: absolute;
     right: 20px;
     top: 20px;
-    z-index: 101;
+    z-index: 300 /* Zapewnia, że ikona jest zawsze na wierzchu */
   }
 
   #logo {
     display: inline-block;
     left: 20px; /* Logo po lewej */
     top: 20px;
-    z-index: 99;
+    z-index: 100; /* Logo pod menu rozwijanym */
   }
 
   .links {
     display: none;
     flex-direction: column;
-    top: 80px; /* Pod hamburgerem */
+    left: 0; 
+    top: 100%; 
+    width: 100%;
     right: 20px; /* Wyrównanie do hamburgera */
     background: white;
-    width: 100%;
     text-align: right;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     gap: 10px;
-    z-index: 100; /* Zapewnia, że menu pojawia się nad innymi elementami */
+    z-index: 200; /* Menu nad logo, ale pod hamburgerem */
+    position: absolute;
   }
 
   .links a {
@@ -265,6 +268,7 @@ p {
     display: block;
     width: 100%; /* Zajmuje całą szerokość menu */
     box-sizing: border-box; /* Upewnia się, że padding nie zaburza szerokości */
+    align-items: center; /* Centrowanie pionowe */
   }
 
   .links.show {
