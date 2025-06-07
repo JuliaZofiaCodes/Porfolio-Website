@@ -1,8 +1,9 @@
 html {
   background: FFFFFF;
   font-family: Poppins;
-  color: #000000;
+  color: #121212;
 }
+
 /* navigation */
 nav {
   display: flex;
@@ -18,9 +19,11 @@ nav {
   font-size: 18px;
   letter-spacing: 0.15px;
 }
+
 .links {
   display: flex;
-  gap: 30px; /* Dostosuj odstęp między linkami */
+  gap: 30px;
+  /* Dostosuj odstęp między linkami */
 }
 
 
@@ -33,24 +36,30 @@ footer {
   min-height: 100px;
   padding: 15px 50px;
 }
+
 .socials {
   align-items: center;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
+
 .hamburger {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
+
 a {
   text-decoration: none;
+  color: #0500FF;
 }
+
 a:visited {
   text-decoration: none;
-  color: #000000;
+  color: #121212;
 }
+
 a:hover {
   opacity: 0.6;
   transition-property: opacity;
@@ -58,6 +67,7 @@ a:hover {
   transition-timing-function: ease;
   transition-delay: 0s;
 }
+
 .socials {
   display: flex;
   flex-direction: row;
@@ -66,6 +76,7 @@ a:hover {
   height: 40px;
   padding: 15px;
 }
+
 /* main content */
 main {
   margin-left: auto;
@@ -73,9 +84,11 @@ main {
   padding: 30px 50px;
   max-width: 800px;
 }
+
 .index {
   max-width: fit-content;
 }
+
 /* hero section */
 .hero {
   padding: 50px 50px;
@@ -83,6 +96,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* projects page */
 .project_grid {
   display: grid;
@@ -92,25 +106,31 @@ main {
 .whole_project {
   padding: 16px;
 }
+
 .project_imgs {
   max-width: 100%;
 }
+
 /* project page */
 .project_decription {
   max-width: 800px;
 }
+
 .process {
   display: flex;
   flex-wrap: wrap;
 }
+
 .process_step {
   min-width: 200px;
 }
+
 iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .project_cover {
   max-width: 720px;
   display: block;
@@ -119,12 +139,14 @@ iframe {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .project_page_image {
   max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 /* typography */
 heading {
   font-style: normal;
@@ -135,6 +157,7 @@ heading {
   margin-top: 0px;
   margin-bottom: 40px;
 }
+
 .subheading {
   font-family: "Poppins";
   font-style: normal;
@@ -144,6 +167,7 @@ heading {
   letter-spacing: 0.15px;
   padding-top: 25px;
 }
+
 h1,
 h2,
 h3,
@@ -153,6 +177,7 @@ h6 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 h1 {
   font-style: normal;
   font-weight: 275;
@@ -160,6 +185,7 @@ h1 {
   line-height: 90px;
   letter-spacing: 1.5px;
 }
+
 h2 {
   font-family: "Poppins";
   font-style: normal;
@@ -168,12 +194,14 @@ h2 {
   line-height: 87px;
   letter-spacing: 0.5px;
 }
+
 h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
   line-height: 60px;
 }
+
 h4 {
   font-style: normal;
   font-weight: 300;
@@ -181,12 +209,14 @@ h4 {
   line-height: 50px;
   letter-spacing: 0.25px;
 }
+
 h5 {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 34px;
 }
+
 h6 {
   font-family: "Poppins";
   font-style: normal;
@@ -195,6 +225,7 @@ h6 {
   line-height: 28px;
   letter-spacing: 0.15px;
 }
+
 p {
   font-style: normal;
   font-weight: 300;
@@ -202,6 +233,23 @@ p {
   line-height: 22px;
   letter-spacing: 0.5px;
 }
+
+/*skip link*/
+a.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #121212;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+a.skip-link:focus {
+  top: 0;
+}
+
 /* media queries */
 
 @media (max-width: 1024px) {
@@ -214,9 +262,11 @@ p {
   .project_grid {
     grid-template-columns: 1fr;
   }
+
   h1 {
     font-size: 30px;
   }
+
   h2 {
     font-size: 28px;
   }
@@ -238,37 +288,45 @@ p {
     position: absolute;
     right: 20px;
     top: 20px;
-    z-index: 300 /* Zapewnia, że ikona jest zawsze na wierzchu */
+    z-index: 300
+      /* Zapewnia, że ikona jest zawsze na wierzchu */
   }
 
   #logo {
     display: inline-block;
-    left: 20px; /* Logo po lewej */
+    left: 20px;
+    /* Logo po lewej */
     top: 20px;
-    z-index: 100; /* Logo pod menu rozwijanym */
+    z-index: 100;
+    /* Logo pod menu rozwijanym */
   }
 
   .links {
     display: none;
     flex-direction: column;
-    left: 0; 
-    top: 100%; 
+    left: 0;
+    top: 100%;
     width: 100%;
-    right: 20px; /* Wyrównanie do hamburgera */
+    right: 20px;
+    /* Wyrównanie do hamburgera */
     background: white;
     text-align: right;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     gap: 10px;
-    z-index: 200; /* Menu nad logo, ale pod hamburgerem */
+    z-index: 200;
+    /* Menu nad logo, ale pod hamburgerem */
     position: absolute;
   }
 
   .links a {
     padding: 15px;
     display: block;
-    width: 100%; /* Zajmuje całą szerokość menu */
-    box-sizing: border-box; /* Upewnia się, że padding nie zaburza szerokości */
-    align-items: center; /* Centrowanie pionowe */
+    width: 100%;
+    /* Zajmuje całą szerokość menu */
+    box-sizing: border-box;
+    /* Upewnia się, że padding nie zaburza szerokości */
+    align-items: center;
+    /* Centrowanie pionowe */
   }
 
   .links.show {
@@ -281,6 +339,7 @@ p {
     font-size: 34px;
     line-height: 51px;
   }
+
   .subheading {
     .subheading {
       font-size: 22px;
@@ -288,14 +347,17 @@ p {
       padding-top: 25px;
     }
   }
+
   h1 {
     font-size: 20px;
     line-height: 30px;
   }
+
   h2 {
     font-size: 18px;
     line-height: 27px;
   }
+
   p {
     font-size: 16px;
     line-height: 24px;
@@ -304,9 +366,11 @@ p {
   .hero {
     padding: 5%;
   }
+
   .whole_project {
     padding: 0px;
   }
+
   main {
     padding: 5%;
   }

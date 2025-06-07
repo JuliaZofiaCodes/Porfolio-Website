@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Logo2.svg">
+
     <!-- clarity heatmap -->
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
@@ -28,7 +29,18 @@
         gtag('js', new Date());
         gtag('config', 'G-7DWB4PVXYC');
     </script>
-    <script src="script.js"></script>
+
+    <!-- Styl CSS banera -->
+    <link rel="stylesheet" href="vendor/tarteaucitron/css/tarteaucitron.css"/>
+
+    <!-- Główna biblioteka -->
+    <script src="vendor/tarteaucitron/tarteaucitron.js" defer></script>
+
+    <!-- Konfiguracja -->
+    <script src="js/cookies-config.js" defer></script>
+
+    <!--Skrypt wewnętrzny-->
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -42,6 +54,8 @@
         </div>
     </nav>
 
+    <a id="skiplink-main" href="#main" class="skip-link" tabindex="1">Przejdź do treści</a>
+    <a id="skiplink-footer" href="#footer" class="skip-link" tabindex="2">Przejdź do stopki</a>
 
     <section class="hero">
         <heading>Hello there! I'm Julia Zofia Kubiak, UX Designer!</heading>
@@ -50,9 +64,9 @@
             I'm a creative who enjoys designing digital solutions for real-life problems, a nerd at heart and forever
             curious individual</div>
     </section>
-    
-    <main class="index">
-       
+
+    <main id="main" class="index">
+
         <div class="project_grid">
 
             <div class="whole_project">
@@ -87,7 +101,7 @@
 
         </div>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="socials">
             <a href="mailto: juliazofia.kubiak@gmail.com" target="_blank"><img src="img/mail.svg" class="socials"></a>
             <a href="https://github.com/JuliaZofiaCodes" target="_blank"><img src="img/github.svg" class="socials"></a>
@@ -97,6 +111,7 @@
         <div>
             <p>✏️ designed & 🚀 developed by Julia Zofia Kubiak</p>
         </div>
+        <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Zmień ustawienia cookies</a>
     </footer>
 </body>
 
